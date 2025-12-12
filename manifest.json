@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_appName__",
+  "version": "0.1.7",
+  "description": "__MSG_appDesc__",
+  "default_locale": "en",
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.tiktok.com/*"],
+      "js": ["scripts/tiktok.js", "scripts/content.js"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "64": "images/icon64.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}

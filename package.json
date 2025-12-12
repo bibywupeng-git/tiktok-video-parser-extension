@@ -1,0 +1,12 @@
+{
+  "name": "grabclipchromeext",
+  "version": "1.0.0",
+  "description": "Chrome extension for grapclip.com that enhances browsing experience, particularly on TikTok.",
+  "license": "ISC",
+  "author": "chenbin",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
