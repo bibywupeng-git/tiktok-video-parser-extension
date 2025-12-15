@@ -47,9 +47,9 @@ chrome.action.onClicked.addListener(async (tab) => {
     return;
   }
   
-  domain = new URL(tab.url).domain;
+  const hostname = new URL(tab.url).hostname;
   supportedPlatforms.some((config) => {
-    if (domain === config.domain) {
+    if (hostname.includes(config.domain)) {
       platform = config.name;
       return true;
     }
@@ -81,9 +81,6 @@ chrome.action.onClicked.addListener(async (tab) => {
     const uiLanguage = chrome.i18n.getUILanguage();
     const langCode = uiLanguage.startsWith("zh") ? uiLanguage.replace("_", "-") : uiLanguage.substring(0, 2);
     let targetUrl = `https://grabclip.com/${encodeURIComponent(videoInfo.platform)}/${encodeURIComponent(langCode)}/?url=${encodeURIComponent(videoInfo.url)}`;
-    if (videoInfo.platform === "bilibili") {
-      targetUrl += `&sessdata=${encodeURIComponent(videoInfo.session_data || "")}`;
-    }
     chrome.tabs.create(
       {
         url: targetUrl,

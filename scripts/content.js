@@ -18,6 +18,9 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
 
 function getAnalyzerForPlatform(platform) {
+  if (!platform) {
+    return null;
+  }
   switch (platform.toLowerCase()) {
     case 'tiktok':
       return window.TikTokAnalyzer;
@@ -66,7 +69,7 @@ function handleGetCurrentVideoPage(platform, sendResponse) {
       });
     }
   } catch (error) {
-    console.error(`Error in handleGetCurrentVideo: ${error.message}`);
+    console.error(`Error in handleGetCurrentVideoPage: ${error.message}`);
     sendResponse({
       success: false,
       error: error.message

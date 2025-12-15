@@ -20,12 +20,7 @@ function createButtonClickHandler() {
         langCode = uiLanguage.replace("_", "-");
       }
       
-      const sessionData = getSessionData();
-      if (!sessionData) {
-        console.log("No session data found");
-      }
-
-      const targetUrl = `https://grabclip.com/bilibili/${encodeURIComponent(langCode)}/?url=${encodeURIComponent(url)}&sessdata=${encodeURIComponent(sessionData)}`;
+      const targetUrl = `https://grabclip.com/bilibili/${encodeURIComponent(langCode)}/?url=${encodeURIComponent(url)}`;
       window.open(targetUrl, "_blank");
     } catch (error) {
       console.error("Error in GrabClip button click:", error);
@@ -124,32 +119,6 @@ function isBilibiliVideoPage(url) {
   }
 }
 
-// Get Bilibili session Data from cookies (fallback method)
-function getSessionData() {
-  try {
-    // Simple cookie access (may not work due to SameSite restrictions)
-    const cookies = document.cookie;
-    const cookiePairs = cookies.split(';');
-    for (const pair of cookiePairs) {
-      const [name, value] = pair.trim().split('=');
-      if (name === 'SESSDATA') {
-        return value;
-      }
-    }
-    
-    // Fallback to localStorage if available
-    const localStorageSession = localStorage.getItem('SESSDATA') || localStorage.getItem('bili_sessdata');
-    if (localStorageSession) {
-      return localStorageSession;
-    }
-    
-    // If all methods fail, return empty string
-    return '';
-  } catch (error) {
-    // Ignore errors as this is just a fallback
-    return '';
-  }
-}
 
 // Analyze video information
 function analyzeVideoInfo() {
@@ -171,15 +140,9 @@ function analyzeVideoInfo() {
     videoPageUrl = url;
   }
   
-  const sessionData = getSessionData();
-  if (!sessionData) {
-    console.log("No session data found");
-  }
-
   return {
     platform: "bilibili",
-    url: videoPageUrl,
-    session_data: sessionData,
+    url: videoPageUrl
   };
 }
 
