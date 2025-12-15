@@ -6,7 +6,7 @@ const supportedPlatforms = [
   { domain: "tiktok.com", name: "tiktok" },
   // { domain: "instagram.com", name: "instagram" },
   // { domain: "weibo.com", name: "weibo" },
-  // { domain: "bilibili.com", name: "bilibili" },
+  { domain: "bilibili.com", name: "bilibili" },
   // { domain: "xiaohongshu.com", name: "rednote" },
   // { domain: "facebook.com", name: "facebook" },
   // { domain: "twitter.com", name: "twitter" },
@@ -49,7 +49,7 @@ chrome.action.onClicked.addListener(async (tab) => {
   
   domain = new URL(tab.url).domain;
   supportedPlatforms.some((config) => {
-    if (domain !== config.domain) {
+    if (domain === config.domain) {
       platform = config.name;
       return true;
     }
@@ -65,14 +65,14 @@ chrome.action.onClicked.addListener(async (tab) => {
 
     if (response && response.success && response.videoInfo) {
       videoInfo = response.videoInfo;
-
+      
       console.log("Got video info:", videoInfo);
     } else {
-      console.error("Failed to get video info:", response?.error || "Unknown error");
+      console.log("Failed to get video info:", response?.error || "Unknown error");
       videoInfo = null;
     }
   } catch (error) {
-    console.error("Error handling icon click:", error);
+    console.log("Error handling icon click:", error);
     videoInfo = null;
   }
 
@@ -80,7 +80,10 @@ chrome.action.onClicked.addListener(async (tab) => {
     // Open GrapClip in new tab
     const uiLanguage = chrome.i18n.getUILanguage();
     const langCode = uiLanguage.startsWith("zh") ? uiLanguage.replace("_", "-") : uiLanguage.substring(0, 2);
-    const targetUrl = `https://grabclip.com/${encodeURIComponent(videoInfo.platform)}/${encodeURIComponent(langCode)}/?url=${encodeURIComponent(videoInfo.url)}`;
+    let targetUrl = `https://grabclip.com/${encodeURIComponent(videoInfo.platform)}/${encodeURIComponent(langCode)}/?url=${encodeURIComponent(videoInfo.url)}`;
+    if (videoInfo.platform === "bilibili") {
+      targetUrl += `&sessdata=${encodeURIComponent(videoInfo.session_data || "")}`;
+    }
     chrome.tabs.create(
       {
         url: targetUrl,

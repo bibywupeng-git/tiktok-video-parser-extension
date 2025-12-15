@@ -21,6 +21,8 @@ function getAnalyzerForPlatform(platform) {
   switch (platform.toLowerCase()) {
     case 'tiktok':
       return window.TikTokAnalyzer;
+    case 'bilibili':
+      return window.BilibiliAnalyzer;
 
     // case 'douyin':
     //   return window.DouyinAnalyzer;

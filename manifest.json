@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "__MSG_appName__",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "__MSG_appDesc__",
   "default_locale": "en",
   "icons": {
@@ -17,6 +17,10 @@
     {
       "matches": ["*://*.tiktok.com/*"],
       "js": ["scripts/tiktok.js", "scripts/content.js"]
+    },
+    {
+      "matches": ["*://*.bilibili.com/*", "*://b23.tv/*"],
+      "js": ["scripts/bilibili.js", "scripts/content.js"]
     }
   ],
   "action": {
@@ -29,6 +33,11 @@
     }
   },
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "cookies"
+  ],
+  "host_permissions": [
+    "*://*.bilibili.com/*",
+    "*://b23.tv/*"
   ]
 }
