@@ -25,17 +25,19 @@ Whether you need to save videos for offline viewing, content archiving, or editi
 ## 🚀 Installation
 
 ### Option 1: From Chrome Web Store (Recommended)
+
 *Link coming soon...* (Pending Review)
 
 ### Option 2: Manual Installation (Developer Mode)
+
 If you want to use the latest version immediately or contribute to the code:
 
-1.  **Download** this repository (Click `Code` -> `Download ZIP`) and unzip it.
-2.  Open your Chrome browser and navigate to `chrome://extensions/`.
-3.  Toggle **"Developer mode"** in the top right corner.
-4.  Click the **"Load unpacked"** button.
-5.  Select the folder where you unzipped this repository.
-6.  The extension is now installed! Pin it to your toolbar for easy access.
+1. **Download** this repository (Click `Code` -> `Download ZIP`) and unzip it.
+2. Open your Chrome browser and navigate to `chrome://extensions/`.
+3. Toggle **"Developer mode"** in the top right corner.
+4. Click the **"Load unpacked"** button.
+5. Select the folder where you unzipped this repository.
+6. The extension is now installed! Pin it to your toolbar for easy access.
 
 ## 🛠 Usage
 
@@ -48,10 +50,10 @@ If you want to use the latest version immediately or contribute to the code:
    - **MP4** — download the highest available no-watermark video quality (HD / 4K when available)  
    - **MP3** — extract and download audio only
 
-**Notes**
+### Notes
+
 - The extension only copies the video URL and forwards it to the GrabClip web tool for processing; the actual parsing and file generation happen on the website.  
 - For privacy: the extension activates only on TikTok video pages and does not store your browsing history or personal data.
-
 
 ## 📂 Project Structure
 
@@ -80,7 +82,7 @@ The extension only activates when you are on a specific video URL to facilitate 
 
 For more details, please view our Privacy Policy.
 
-👉 **https://grabclip.com/privacy_policy**
+👉 **[Privacy Policy](https://grabclip.com/privacy_policy)**
 
 ## 🤝 Contributing
 
@@ -88,9 +90,11 @@ We welcome contributions from the community!
 
 1. **Fork** this repository  
 2. Create your feature branch  
+
    ```bash
    git checkout -b feature/amazing-feature
     ```
+
 3. **Commit** your changes  
 4. **Push** to the branch  
 5. Open a **Pull Request** on GitHub.
@@ -110,12 +114,14 @@ You can contribute by:
 Thank you for helping improve GrabClip!
 
 ## 📝 License
+
 Distributed under the MIT License. See [LICENSE](https://opensource.org/licenses/MIT) for more information.
 
 ## 📞 Contact & Support
+
 For issues, feature requests, or DMCA inquiries:
 
-Official Website: https://www.grabclip.com
+Official Website: <https://www.grabclip.com>
 Report Bug: GitHub Issues
 
 ## ⚠️ Disclaimer
