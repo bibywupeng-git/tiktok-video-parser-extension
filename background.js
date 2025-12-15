@@ -38,7 +38,6 @@ chrome.action.onClicked.addListener(async (tab) => {
   console.log("Extension icon clicked on tab:", tab.id, tab.url);
 
   let videoInfo = null;
-  let domain = null;
   let platform = null;
   
   // Check if tab has a valid URL and is supported

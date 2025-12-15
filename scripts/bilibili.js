@@ -43,6 +43,7 @@ function createGrabClipButton() {
     border: none;
     border-radius: 50%;
     margin-right: 30px;
+    margin-left: 10px;
     width: 36px;
     height: 36px;
     padding: 0;
