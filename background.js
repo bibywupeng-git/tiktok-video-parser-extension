@@ -4,7 +4,7 @@
 const supportedPlatforms = [
   // { domain: "douyin.com", name: "douyin" },
   { domain: "tiktok.com", name: "tiktok" },
-  // { domain: "instagram.com", name: "instagram" },
+  { domain: "instagram.com", name: "instagram" },
   // { domain: "weibo.com", name: "weibo" },
   { domain: "bilibili.com", name: "bilibili" },
   // { domain: "xiaohongshu.com", name: "rednote" },

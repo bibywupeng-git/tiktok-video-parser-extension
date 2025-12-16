@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "__MSG_appName__",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "__MSG_appDesc__",
   "default_locale": "en",
   "icons": {
@@ -21,6 +21,10 @@
     {
       "matches": ["*://*.bilibili.com/*", "*://b23.tv/*"],
       "js": ["scripts/bilibili.js", "scripts/content.js"]
+    },
+    {
+      "matches": ["*://*.instagram.com/*"],
+      "js": ["scripts/instagram.js", "scripts/content.js"]
     }
   ],
   "action": {

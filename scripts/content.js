@@ -26,6 +26,8 @@ function getAnalyzerForPlatform(platform) {
       return window.TikTokAnalyzer;
     case 'bilibili':
       return window.BilibiliAnalyzer;
+    case 'instagram':
+      return window.InstagramAnalyzer;
 
     // case 'douyin':
     //   return window.DouyinAnalyzer;
