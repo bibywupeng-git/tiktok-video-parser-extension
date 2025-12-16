@@ -231,7 +231,7 @@ function initializeGrabClipButton() {
     
     if (shouldUpdate) {
       // Add button to new or updated content with a small delay
-      setTimeout(addGrabClipButton, 100);
+      setTimeout(addGrabClipButton, 1000);
     }
   });
   

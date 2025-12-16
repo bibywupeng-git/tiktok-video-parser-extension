@@ -379,7 +379,7 @@ function initializeGrabClipButtons() {
     
     if (shouldUpdate) {
       // Add button to new or updated articles/action bars
-      setTimeout(addGrabClipButtons, 100);
+      setTimeout(addGrabClipButton, 1000);
     }
   });
   

@@ -214,7 +214,7 @@ function initializeGrabClipButton() {
     
     if (shouldUpdate) {
       // Add button to new or updated toolbar with a small delay
-      setTimeout(addGrabClipButton, 100);
+      setTimeout(addGrabClipButton, 1000);
     }
   });
   
