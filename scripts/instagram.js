@@ -169,7 +169,7 @@ function createGrabClipButton() {
 function addGrabClipButton() {
   // aria-label="Like"
   const svgs = document.querySelectorAll(
-    'div[class*="html-div"] svg[aria-label="Like"]'
+    'div[class*="html-div"] svg polygon[points="20 21 12 13.44 4 21 4 3 20 3 20 21"]'
   );
   if (!svgs.length) {
     console.log('No like SVG found');
