@@ -8,7 +8,7 @@ const supportedPlatforms = [
   // { domain: "weibo.com", name: "weibo" },
   { domain: "bilibili.com", name: "bilibili" },
   // { domain: "xiaohongshu.com", name: "rednote" },
-  // { domain: "facebook.com", name: "facebook" },
+  { domain: "facebook.com", name: "facebook" },
   // { domain: "twitter.com", name: "twitter" },
   // { domain: "x.com", name: "twitter" },
 ];

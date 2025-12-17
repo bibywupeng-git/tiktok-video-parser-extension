@@ -28,6 +28,8 @@ function getAnalyzerForPlatform(platform) {
       return window.BilibiliAnalyzer;
     case 'instagram':
       return window.InstagramAnalyzer;
+    case 'facebook':
+      return window.FacebookAnalyzer;
 
     // case 'douyin':
     //   return window.DouyinAnalyzer;

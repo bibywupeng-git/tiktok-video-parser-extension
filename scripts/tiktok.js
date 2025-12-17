@@ -217,7 +217,7 @@ function extractVideoUrl(container = document, isArticle = false) {
  * @param {string} url - The URL to check
  * @returns {boolean} True if it's a TikTok video page, false otherwise
  */
-function isSupportedVideoPage(url) {
+function isTikTokVideoPage(url) {
   try {
     const parsedUrl = new URL(url);
     const domain = parsedUrl.hostname;

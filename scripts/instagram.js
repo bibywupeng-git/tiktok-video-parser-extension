@@ -38,11 +38,24 @@ const SPAN_STYLES = `
 function isInstagramVideoPage(url) {
   if (!url) return false;
   // Instagram video URLs typically have formats like:
-  // https://www.instagram.com/p/POST_ID/
-  // https://www.instagram.com/reel/REEL_ID/
-  // https://www.instagram.com/tv/TV_ID/
-  const videoPattern = /instagram\.com\/(p|reel|tv)\//i;
-  return videoPattern.test(url);
+  
+  // https://www.instagram.com/p/DLkpseLSHYU/
+  // https://www.instagram.com/reel/DLkpseLSHYU/
+  // https://www.instagram.com/isabridal.official/reel/DQE-Q2kkWhf/
+  
+  try {
+    const parsedUrl = new URL(url);
+    const hostname = parsedUrl.hostname;
+    
+    if (!hostname || !hostname.includes('instagram.com')) {
+      return false;
+    }
+    
+    return url.includes('/reel/') || url.includes('/p/');
+  } catch (error) {
+    console.error('Error checking Instagram video page:', error);
+    return false;
+  }
 }
 
 /**
@@ -219,7 +232,7 @@ function initializeGrabClipButton() {
           .filter(node => node.nodeType === Node.ELEMENT_NODE)
           .some(node => {
             // Check if node or its children contain like buttons or video elements
-            return node.querySelector('svg[aria-label="Like"]') || 
+            return node.querySelector('div[class*="html-div"] svg polygon[points="20 21 12 13.44 4 21 4 3 20 3 20 21"]') || 
                    node.querySelector('video');
           });
         
