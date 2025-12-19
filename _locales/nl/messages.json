@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "TikTok Video Downloader (Zonder Watermerk & HD) - GrabClip"
+    "message": "TikTok Video Parser"
   },
   "appDesc": {
-    "message": "Download TikTok-video's zonder watermerk in HD/4K. Snel, gratis en onbeperkt. Mogelijk gemaakt door GrabClip."
+    "message": "Een eenvoudige browserextensie voor het parseren en verwerken van TikTok-video-URL's."
   }
 }

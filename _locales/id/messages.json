@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "Pengunduh Video TikTok (Tanpa Watermark & HD) - GrabClip"
+    "message": "TikTok Video Parser"
   },
   "appDesc": {
-    "message": "Unduh video TikTok tanpa watermark dalam kualitas HD/4K. Cepat, gratis, dan tanpa batas. Didukung oleh GrabClip."
+    "message": "Ekstensi browser sederhana untuk menguraikan dan menangani URL video TikTok."
   }
 }

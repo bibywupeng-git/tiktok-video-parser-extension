@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "ดาวน์โหลดวิดีโอ TikTok (ไม่มีลายน้ำ & HD) - GrabClip"
+    "message": "TikTok Video Parser"
   },
   "appDesc": {
-    "message": "ดาวน์โหลดวิดีโอ TikTok แบบไม่มีลายน้ำในระดับ HD/4K รวดเร็ว ฟรี และไม่จำกัด ขับเคลื่อนโดย GrabClip"
+    "message": "ส่วนขยายเบราว์เซอร์พื้นฐานสำหรับวิเคราะห์และจัดการ URL วิดีโอ TikTok."
   }
 }

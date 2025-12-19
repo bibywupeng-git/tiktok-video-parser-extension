@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "Descargador de videos de TikTok (Sin marca de agua y HD) - GrabClip"
+    "message": "TikTok Video Parser"
   },
   "appDesc": {
-    "message": "Descarga videos de TikTok sin marca de agua en HD/4K. Rápido, gratis e ilimitado. Impulsado por GrabClip."
+    "message": "Una extensión de navegador simple para analizar y manejar URLs de videos de TikTok."
   }
 }

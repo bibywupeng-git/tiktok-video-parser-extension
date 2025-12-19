@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "Tải Video TikTok (Không Logo & HD) - GrabClip"
+    "message": "TikTok Video Parser"
   },
   "appDesc": {
-    "message": "Tải xuống video TikTok không logo chất lượng HD/4K. Nhanh chóng, miễn phí và không giới hạn. Cung cấp bởi GrabClip."
+    "message": "Một tiện ích trình duyệt đơn giản để phân tích và xử lý URL video TikTok."
   }
 }

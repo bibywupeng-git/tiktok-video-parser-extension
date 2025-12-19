@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "Скачать видео с Тик Ток (Без водяных знаков и HD) - GrabClip"
+    "message": "TikTok Video Parser"
   },
   "appDesc": {
-    "message": "Скачивайте видео из TikTok без водяных знаков в HD/4K. Быстро, бесплатно и без ограничений. От GrabClip."
+    "message": "Простое расширение браузера для парсинга и обработки URL-адресов видео TikTok."
   }
 }

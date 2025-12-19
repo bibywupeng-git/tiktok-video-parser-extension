@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "Downloader Video TikTok (Senza Filigrana & HD) - GrabClip"
+    "message": "TikTok Video Parser"
   },
   "appDesc": {
-    "message": "Scarica video TikTok senza filigrana in HD/4K. Veloce, gratuito e illimitato. Powered by GrabClip."
+    "message": "Una semplice estensione browser per analizzare e gestire gli URL dei video TikTok."
   }
 }

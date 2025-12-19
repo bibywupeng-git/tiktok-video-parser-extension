@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "Λήψη βίντεο TikTok (Χωρίς υδατογράφημα & HD) - GrabClip"
+    "message": "TikTok Video Parser"
   },
   "appDesc": {
-    "message": "Κατεβάστε βίντεο TikTok χωρίς υδατογράφημα σε HD/4K. Γρήγορα, δωρεάν και απεριόριστα. Με την υποστήριξη του GrabClip."
+    "message": "Μια απλή επέκταση περιηγητή για την ανάλυση και επεξεργασία URL βίντεο TikTok."
   }
 }

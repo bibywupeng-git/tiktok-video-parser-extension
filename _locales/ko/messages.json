@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "틱톡 비디오 다운로더 (워터마크 없음 & HD) - GrabClip"
+    "message": "TikTok Video Parser"
   },
   "appDesc": {
-    "message": "워터마크 없는 틱톡 영상을 HD/4K로 다운로드하세요. 빠르고 무료이며 무제한입니다. GrabClip 제공."
+    "message": "TikTok 비디오 URL을 파싱하고 처리하기 위한 간단한 브라우저 확장 프로그램."
   }
 }

@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "TikTok Video Downloader (No Watermark & HD)- GrabClip"
+    "message": "TikTok Video Parser"
   },
   "appDesc": {
-    "message": "Download TikTok videos without watermark in HD/4K. Fast, free, and unlimited. Powered by GrabClip."
+    "message": "A simple browser extension for parsing and handling TikTok video URLs."
   }
 }

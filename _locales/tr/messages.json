@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "TikTok Video İndirici (Filigransız & HD) - GrabClip"
+    "message": "TikTok Video Parser"
   },
   "appDesc": {
-    "message": "Filigransız TikTok videolarını HD/4K kalitesinde indirin. Hızlı, ücretsiz ve sınırsız. GrabClip tarafından desteklenmektedir."
+    "message": "TikTok video URL'lerini ayrıştırmak ve işlemek için basit bir tarayıcı uzantısı."
   }
 }

@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "TikTok 影片下載器 (無浮水印 & 高畫質) - GrabClip"
+    "message": "TikTok影片解析器"
   },
   "appDesc": {
-    "message": "下載無浮水印的 TikTok 影片，支援 HD/4K 畫質。快速、免費、無限量。由 GrabClip 提供支援。"
+    "message": "一個簡單的瀏覽器延伸，用於解析和處理TikTok影片URL。"
   }
 }

@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "Baixar Vídeos do TikTok (Sem Marca d'água & HD) - GrabClip"
+    "message": "TikTok Video Parser"
   },
   "appDesc": {
-    "message": "Baixe vídeos do TikTok sem marca d'água em HD/4K. Rápido, gratuito e ilimitado. Desenvolvido por GrabClip."
+    "message": "Uma extensão simples para navegador para analisar e manipular URLs de vídeos do TikTok."
   }
 }

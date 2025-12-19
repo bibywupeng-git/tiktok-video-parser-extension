@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "Stahovač videa z TikToku (Bez vodoznaku & HD) - GrabClip"
+    "message": "TikTok Video Parser"
   },
   "appDesc": {
-    "message": "Stahujte videa z TikToku bez vodoznaku v HD/4K. Rychlé, zdarma a neomezené. Běží na GrabClip."
+    "message": "Jednoduché rozšíření prohlížeče pro analýzu a zpracování odkazů na videa TikTok."
   }
 }

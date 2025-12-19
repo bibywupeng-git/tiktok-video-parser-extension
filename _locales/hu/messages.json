@@ -1,8 +1,8 @@
 {
   "appName": {
-    "message": "TikTok Videó Letöltő (Vízjel Nélkül & HD) - GrabClip"
+    "message": "TikTok Video Parser"
   },
   "appDesc": {
-    "message": "Töltsön le TikTok videókat vízjel nélkül HD/4K minőségben. Gyors, ingyenes és korlátlan. A GrabClip támogatásával."
+    "message": "Egyszerű böngészőbővítmény TikTok videó URL-ek elemzéséhez és kezeléséhez."
   }
 }
