@@ -17,18 +17,6 @@
     {
       "matches": ["*://*.tiktok.com/*"],
       "js": ["scripts/tiktok.js", "scripts/content.js"]
-    },
-    {
-      "matches": ["*://*.bilibili.com/*", "*://b23.tv/*"],
-      "js": ["scripts/bilibili.js", "scripts/content.js"]
-    },
-    {
-      "matches": ["*://*.instagram.com/*"],
-      "js": ["scripts/instagram.js", "scripts/content.js"]
-    },
-    {
-      "matches": ["*://*.facebook.com/*"],
-      "js": ["scripts/facebook.js", "scripts/content.js"]
     }
   ],
   "action": {
