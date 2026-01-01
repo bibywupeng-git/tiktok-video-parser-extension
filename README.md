@@ -50,11 +50,23 @@ This extension can be installed locally for development or evaluation purposes:
 
 ## 🛠 Usage
 
-1. Open a TikTok video page.
-2. Click the extension button in the browser toolbar.
-3. The extension copies the video URL.
-4. A new browser tab opens to a web-based processing page, where the URL is passed automatically.
-5. The web page handles further parsing and media options.
+1. Open any TikTok video page in your browser.
+
+2. You can start the parsing process in either of the following ways:
+   - Click the extension icon in the browser toolbar, or
+   - Click the parse button added by the extension directly on the TikTok video page.
+
+3. The extension will automatically copy the video link and open a new tab:
+   https://grabclip.com/tiktok
+
+4. The page will parse the video source and display a preview.
+   You can then choose to download:
+   - The highest available quality video (MP4, no watermark), or
+   - Audio only (MP3)
+
+The extension serves as a convenient entry point from TikTok,
+while the parsing and download process is handled on the website.
+
 
 ### Notes
 
@@ -67,18 +79,19 @@ This extension can be installed locally for development or evaluation purposes:
 
 ## 📂 Project Structure
 
+## 📁 Project Structure
+
 ```text
 tiktok-video-parser-extension/
-├── _locales/            # Internationalization files
-├── images/              # Extension icons
-├── scripts/             # Core logic
-│   ├── content.js       # Page interaction logic
-│   └── tiktok.js        # TikTok-specific parsing
-├── background.js        # Background service worker
-├── manifest.json        # Extension configuration
-├── LICENSE              # MIT license
-└── README.md            # Documentation
+├── analyzers/              # Parsing logic modules
+├── background.js           # Background service worker
+├── content.js              # Injects parse button into TikTok pages
+├── icons/                  # Extension icons
+├── _locales/               # Internationalization messages
+├── manifest.json           # Chrome extension configuration
+└── README.md               # Project documentation
 ```
+
 ## 🔒 Privacy Policy
 
 This project respects user privacy.
