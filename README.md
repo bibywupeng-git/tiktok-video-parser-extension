@@ -79,8 +79,6 @@ while the parsing and download process is handled on the website.
 
 ## 📂 Project Structure
 
-## 📁 Project Structure
-
 ```text
 tiktok-video-parser-extension/
 ├── analyzers/              # Parsing logic modules
