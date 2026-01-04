@@ -35,6 +35,33 @@ class BaseAnalyzer {
     throw new Error("Subclass must implement insertDownloadButton method");
   }
 
+
+  getLangCode() {
+    const supportLangCodes = ["zh", "en", "bn", "cs", "de", "es", "ru", "it", "ms", "nl", "fr", "tl", "id", "vi", "pt", "pl", "tr", "uk", "fa", "hi", "lo", "my", "th", "ja", "ko", "zh-HK"];
+    let uiLanguage = navigator.language || "en";
+
+    // 兼容处理
+    uiLanguage = uiLanguage.replace("_", "-")
+
+    const lowerCaseLang = uiLanguage.toLowerCase();
+    if (lowerCaseLang.startsWith("zh-")) {
+      if (lowerCaseLang.endsWith("cn")) {
+        return "zh"
+      }
+      else {
+        return uiLanguage
+      }
+    }
+    
+    uiLanguage = uiLanguage.substring(0, 2);
+    if (supportLangCodes.includes(uiLanguage)) {
+      return uiLanguage;
+    } else {
+      return "en";
+    }
+  }
+
+  
   /**
    * Handle click event for GrabClip button
    */
@@ -47,10 +74,7 @@ class BaseAnalyzer {
         console.log("Got video page info:", videoPageInfo);
 
         // Open GrapClip in new tab
-        const uiLanguage = navigator.language || "en";
-        const langCode = uiLanguage.startsWith("zh")
-          ? uiLanguage.replace("_", "-")
-          : uiLanguage.substring(0, 2);
+        const langCode = this.getLangCode();
 
         // 在回调内部构建URL并打开新窗口
         let targetUrl = `https://grabclip.com/${platform.name}/${langCode}/?url=${encodeURIComponent(videoPageInfo.url)}`;
