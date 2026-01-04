@@ -6,8 +6,7 @@ and forwarding video URLs to a web-based processing flow.
 This project is designed with a minimal architecture and clear separation between
 the browser extension and the web-based processing layer.
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) [![Chrome Web Store](https://img.shields.io/badge/Chrome-Web%20Store-blue?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/tiktok-video-parser/lblpmemgockclmggolioifofeolidfan)
 ---
 
 ## 📖 Introduction
